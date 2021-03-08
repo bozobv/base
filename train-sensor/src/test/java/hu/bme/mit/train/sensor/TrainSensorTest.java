@@ -11,24 +11,18 @@ import hu.bme.mit.train.interfaces.TrainUser;
 import hu.bme.mit.train.system.*;
 
 public class TrainSensorTest {
-	TrainController controller;
-	TrainSensor sensor;
-	TrainUser user;
+	int test;
 
     @Before
     public void before() {
-    	TrainSystem system = new TrainSystem();
-		controller = system.getController();
-		sensor = system.getSensor();
-		user = system.getUser();
+    	test = 2;
 		
     }
 
     @Test
     public void ThisIsAnExampleTestStub() {
-		sensor.overrideSpeedLimit(50);
-		sensor.overrideSpeedLimit(5440);
-		Assert.assertEquals(50, sensor.getSpeedLimit());
+		test++;
+		Assert.assertEquals(3, test);
 
 
     }
