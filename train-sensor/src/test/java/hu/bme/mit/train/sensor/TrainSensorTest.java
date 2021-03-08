@@ -22,7 +22,6 @@ public class TrainSensorTest {
 		sensor = system.getSensor();
 		user = system.getUser();
 		
-		
     }
 
     @Test
