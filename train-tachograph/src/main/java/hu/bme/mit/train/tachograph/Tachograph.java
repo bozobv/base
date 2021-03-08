@@ -12,7 +12,7 @@ public class Tachograph {
         table = HashBasedTable.create();
     }
 
-    public int getCount()
+    public int getSize()
     {
         return table.size();
     }
