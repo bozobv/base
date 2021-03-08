@@ -8,7 +8,7 @@ import org.junit.Test;
 import hu.bme.mit.train.interfaces.TrainController;
 import hu.bme.mit.train.interfaces.TrainSensor;
 import hu.bme.mit.train.interfaces.TrainUser;
-import hu.bme.mit.train.system.TrainSystem;
+import hu.bme.mit.train.system.*;
 
 public class TrainSensorTest {
 	TrainController controller;
