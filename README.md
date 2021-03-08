@@ -2,7 +2,7 @@
 **Creating some bold text**
 *Creating some italic teyt*
 ***Then both of them***
-##### End it with level 6 heading for no reason
+##### End it with level 6 heading
 
 
 4.2-es feladathoz használom a sort
