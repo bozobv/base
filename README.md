@@ -4,7 +4,10 @@
 ***Then both of them***
 ##### End it with level 6 heading for no reason
 
+
 4.2-es feladathoz használom a sort
+4.3-as feladathoz okozok problémát
+és most megoldottam
 
 # Train Speed Controller
 
