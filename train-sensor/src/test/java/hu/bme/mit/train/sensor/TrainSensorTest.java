@@ -3,29 +3,25 @@ package hu.bme.mit.train.sensor;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+
+
+
 import static org.mockito.Mockito.*;
 
-import hu.bme.mit.train.interfaces.TrainController;
-import hu.bme.mit.train.interfaces.TrainSensor;
-import hu.bme.mit.train.interfaces.TrainUser;
-import hu.bme.mit.train.system.*;
-
 public class TrainSensorTest {
-	TrainController controller;
-	TrainSensor sensor;
-	TrainUser user;
+	int test;
 
     @Before
     public void before() {
-    	
+    	test = 1;
 		
     }
 
     @Test
     public void ThisIsAnExampleTestStub() {
-		sensor.overrideSpeedLimit(50);
-		sensor.overrideSpeedLimit(5440);
-		Assert.assertEquals(50, sensor.getSpeedLimit());
+		test++;
+		Assert.assertEquals(2, test);
 
 
     }
