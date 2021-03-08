@@ -11,7 +11,6 @@ import hu.bme.mit.train.interfaces.TrainUser;
 import hu.bme.mit.train.system.TrainSystem;
 
 public class TrainSensorTest {
-	TrainSensor ts;
 	TrainController controller;
 	TrainSensor sensor;
 	TrainUser user;
