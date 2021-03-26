@@ -1,6 +1,6 @@
 package hu.bme.mit.train.tachograph;
 
-import com.google.common.collect.HashBasedTable;
+/*import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Table;
 
 import java.time.LocalDateTime;
@@ -21,4 +21,4 @@ public class Tachograph {
     {
         table.put(time, joystickPosition,referenceSpeed);
     }
-}
+}*/
