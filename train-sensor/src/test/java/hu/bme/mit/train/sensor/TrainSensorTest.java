@@ -6,9 +6,9 @@ import hu.bme.mit.train.interfaces.TrainUser;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
-import org.mockito.Mockito;
 
 import static org.mockito.Mockito.*;
+
 
 public class TrainSensorTest {
 
@@ -27,22 +27,22 @@ public class TrainSensorTest {
     @DisplayName("Setting a negative value for speedlimit")
     public void AbsoluteLimitNegative() {
         sensor.overrideSpeedLimit(-1);
-        Mockito.verify(user, times(1)).setAlarmState(true);
+        verify(user, times(1)).setAlarmState(true);
     }
 
     @Test
     @DisplayName("Setting a value over 500")
     public void AbsoluteLimitOver() {
         sensor.overrideSpeedLimit(501);
-        Mockito.verify(user, times(1)).setAlarmState(true);
+        verify(user, times(1)).setAlarmState(true);
     }
 
     @Test
     @DisplayName("Setting a value under half")
     public void LessThanHalfSpeedLimit() {
-        sensor.overrideSpeedLimit(150);
+        when(controller.getReferenceSpeed()).thenReturn(150);
         sensor.overrideSpeedLimit(50);
-        Mockito.verify(user, times(1)).setAlarmState(true);
+        verify(user, times(1)).setAlarmState(true);
     }
 
     @Test
@@ -50,7 +50,7 @@ public class TrainSensorTest {
     public void AlarmFalseCheck() {
         when(controller.getReferenceSpeed()).thenReturn(150);
         sensor.overrideSpeedLimit(120);
-        Mockito.verify(user, never()).setAlarmState(true);
+        verify(user, never()).setAlarmState(true);
     }
 
 }
