@@ -27,6 +27,7 @@ public class TrainControllerImpl implements TrainController {
 		};
 	}
 
+
 	@Override
 	public void followSpeed() {
 		if (referenceSpeed < 0) {
